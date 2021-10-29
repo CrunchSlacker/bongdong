@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block title %}No X{% endblock %} {% block content%}
+<!DOCTYPE html>
+<html>
+  <main>
+
+    <header>
+      <h1>HTMLOL</h1>
+    </header>
+    <body>
+      <form method="POST">
+        <label for="x">Displacement</label>
+        <input id="x" name="x" type="number" step="any">
+        <br>
+
+        <label for="vi">Velocity Initial</label>
+        <input id="vi" name="vi" type="number" step="any">
+        <br>
+
+        <label for="vf">Velocity Final</label>
+        <input id ="vf" name ="vf" type ="number"step="any">
+        <br>
+
+        <label for="a">Acceleration</label>
+        <input id ="a" name ="a" type ="number"step="any">
+        <br>
+
+        <label for="t">Time</label>
+        <input id ="t" name ="t" type ="number"step="any">
+        <br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </body>
+  </main>
+
+</html>
+{{ans}}
+{% endblock %}
